@@ -14,7 +14,7 @@ You will be submitting each homework assignment into a new GitHub repository eac
 
 2.  You'll need a web browser that displays content consistently: [Google Chrome](https://www.google.com/chrome/). Download Chrome and install it, if you don't already have it of course!
 
-3.  Download the [HTML file](index.html) printout we looked at in class, and open it with your selected code editor. Also open that file with the Chrome browser -- you should see the same bubbles we saw in calss.
+3.  Save the [HTML file](https://raw.githubusercontent.com/zamfi/cca-computational-practices-fall-2018/master/hw/index.html) printout we looked at in class, and open it with your selected code editor. Also open that file with the Chrome browser -- you should see the same bubbles we saw in calss.
 
 4.  Explore the javascript code inside `index.html`. Figure out which numbers you can change to:
 
