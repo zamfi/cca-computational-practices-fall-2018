@@ -1,4 +1,4 @@
-# cca-computational-practices-fall-2018
+# Computational Practices I, Fall 2018
 
 This course repository contains homework assignments, useful guides, and code for **Computational Practices 1** at CCA, Fall 2018.
 
