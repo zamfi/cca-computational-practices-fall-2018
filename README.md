@@ -43,30 +43,30 @@ function setup() {
 
 function draw() {
   background(240);
-	
-	noStroke();
 
-	fill(0, 120, 255);
-	rect(0, 320, 80, 80);
-	
-	fill(220, 0, 0);
-	rect(80, 0, 320, 320);
+  noStroke();
 
-	fill(255, 235, 0);
-	rect(370, 360, 30, 40);
-	
-	stroke(0);
-	strokeWeight(10);
-	strokeCap(SQUARE);
-	line(80, 0, 80, 400);
-	line(0, 320, 400, 320);
-	line(370, 320, 370, 400);
-	
-	strokeWeight(20);
-	line(0, 150, 80, 150);
-	
-	strokeWeight(15);
-	line(370, 360, 400, 360);
+  fill(0, 120, 255);
+  rect(0, 320, 80, 80);
+
+  fill(220, 0, 0);
+  rect(80, 0, 320, 320);
+
+  fill(255, 235, 0);
+  rect(370, 360, 30, 40);
+
+  stroke(0);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(80, 0, 80, 400);
+  line(0, 320, 400, 320);
+  line(370, 320, 370, 400);
+
+  strokeWeight(20);
+  line(0, 150, 80, 150);
+
+  strokeWeight(15);
+  line(370, 360, 400, 360);
 }
 ```
 
@@ -87,40 +87,40 @@ function setup() {
 
 function draw() {
   background(240);
-	
-	noStroke();
+
+  noStroke();
 
   let red = color(220, 0, 0);
   let blue = color(0, 120, 255);
   let yellow = color(255, 235, 0);
-  
+
   let leftLineX = 80;
   let lowerLineY = 320;
   let rightLineX = 370;
   let upperShortLineY = 150;
   let lowerShortLineY = 360;
-  
-	fill(blue);
-	rect(0, lowerLineY, leftLineX, height-lowerLineY);
-	
-	fill(red);
-	rect(leftLineX, 0, width-leftLineX, lowerLineY);
 
-	fill(yellow);
-	rect(rightLineX, lowerShortLineY, width-rightLineX, height-lowerShortLineY);
-	
-	stroke(0);
-	strokeWeight(10);
-	strokeCap(SQUARE);
-	line(leftLineX, 0, leftLineX, height);
-	line(0, lowerLineY, width, lowerLineY);
-	line(rightLineX, lowerLineY, rightLineX, height);
-	
-	strokeWeight(20);
-	line(0, upperShortLineY, leftLineX, upperShortLineY);
-	
-	strokeWeight(15);
-	line(rightLineX, lowerShortLineY, width, lowerShortLineY);
+  fill(blue);
+  rect(0, lowerLineY, leftLineX, height - lowerLineY);
+
+  fill(red);
+  rect(leftLineX, 0, width - leftLineX, lowerLineY);
+
+  fill(yellow);
+  rect(rightLineX, lowerShortLineY, width - rightLineX, height - lowerShortLineY);
+
+  stroke(0);
+  strokeWeight(10);
+  strokeCap(SQUARE);
+  line(leftLineX, 0, leftLineX, height);
+  line(0, lowerLineY, width, lowerLineY);
+  line(rightLineX, lowerLineY, rightLineX, height);
+
+  strokeWeight(20);
+  line(0, upperShortLineY, leftLineX, upperShortLineY);
+
+  strokeWeight(15);
+  line(rightLineX, lowerShortLineY, width, lowerShortLineY);
 }
 ```
 
