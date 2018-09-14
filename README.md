@@ -130,7 +130,9 @@ Our previous code was a sea of numbers. If you wanted to move a point or line in
 
 This **variable** approach here **names** some of the key locations on the canvas and lets us change them everywhere they're used in a drawing command by changing the number itself in **only one place**. p5.js already gives you some variables to work with, including `width` and `height`, used above to refer to the width and height of the canvas.
 
-**Try changing the canvas size in the code above and observe what happens. Why does this happen? (What happened when you changed the canvas size in the original, non-variable code?**
-
 Naming is a very useful tool in our **abstraction** toolkit.
+
+1. Try changing the canvas size in the code above and observe what happens. Why does this happen? (What happened when you changed the canvas size in the original, non-variable code?
+
+2. Explore some of the other variables the p5.js provides. `mouseX` and `mouseY` are a fun interactive pairing!
 
