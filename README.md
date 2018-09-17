@@ -136,3 +136,87 @@ Naming is a very useful tool in our **abstraction** toolkit.
 
 2. Explore some of the other variables the p5.js provides. `mouseX` and `mouseY` are a fun interactive pairing!
 
+#### Animations
+
+One use of variables, explored above, is to name information and use that name to link other components together.
+
+Another use of variables is to track information about an animation as it progresses.
+
+For example, to move a circle across the screen, we might consider code like this:
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 10;
+
+function draw() {
+  background(220);
+  
+  ellipse(x, 200, 40);
+  
+  x = x + 3;
+}
+```
+
+In an animation, your computer draws frames at a fixed rate (called, appropriately, the *frame rate*). In p5.js, you are responsible for telling p5 what to draw each frame: you put that drawing code inside the `draw` function. Each frame, p5.js runs your `draw` function and copies whatever it draws to the screen.
+
+To make a smooth animation, we want each frame to look *mostly* like the previous frame, but with a small difference. The code above does that: each frame, the circle is draw 3 pixels further to the right. The code tracks the position of the circle with the `x` variable, whose value persists across frames -- so each frame, `x` is increased by 3.
+
+The code above does what we want, but it's very one-shot: after the circle reaches the right edge of the canvas, it's over.
+
+We can use an `if` statement -- a condition-checking piece of code -- to help us reset the circle's position if it reaches the right edge of the screen, like in the following code:
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 10;
+
+function draw() {
+  background(220);
+  
+  ellipse(x, 200, 40);
+  
+  x = x + 3;
+  
+  if (x > width) {
+    x = 10;
+  }
+}
+```
+
+The `if` condition is checked every frame, and when (if?) `x` ever reaches the value of `width` -- 400 in this case, because that's the canvas width -- then `x` is reset to 10.
+
+But that's just a reset. What if we want the circle to move backwards across the screen?
+
+That's a second thing we need to track: the motion of the circle itself. We can make a new variable that tracks how many pixels per frame the circle moves, and then change that variable whenever the circle reaches a canvas boundary. 
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 10;
+var changeInX = 3;
+
+function draw() {
+  background(220);
+  
+  ellipse(x, 200, 40);
+  
+  x = x + changeInX;
+  
+  if (x > width) {
+    changeInX = -3;
+  }
+  
+  if (x < 0) {
+    changeInX = 3;
+  }
+}
+```
+
+[Homework for Week 2]
