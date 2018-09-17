@@ -76,6 +76,8 @@ This code uses the location of each circle to determine its color. The `x` coord
 
 **Assignment**: Modify the `HSB` above to `RGB`.
 
-None of the numbers change, just what those numbers **represent**.
+HSB still uses 3 numbers to represent color, but they're *hue*, *saturation*, and *brightness* instead of red, green, and blue.
+
+Note that when you make this modification, none of the numbers change. The only thing that changes is **what those numbers represent**.
 
 **Assignment**: Rename the `x` and `y` variables `h` and `s` (for "hue" and "saturation"). In your `README.me` file, answer: what changes in the animation?
