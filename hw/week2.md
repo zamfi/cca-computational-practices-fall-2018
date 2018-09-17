@@ -42,13 +42,13 @@ function draw() {
 ```
 
 
-1. **Assignment**: Add other variables to the code above to have other parts of the animation change over time. Perhaps color? Or size? Shape? Speed?
+1. **Assignment**: Add other variables to the code above to have other parts of the animation change over time. Perhaps color? Or size? Shape? Speed? `y`-coordinate?
 
-2. **Assignment**: Add a second circle. As a first attempt, you can just draw a second circle at a different y-coordinate in your code, using the existing variables. 
+2. **Assignment**: Add a second circle. As a first attempt, you can just draw a second circle at a different y-coordinate in your code, using the existing variables.
    
    But what if you want two completely independent circles that can start in different places and go at different speeds? (Hint: you'll probably need to have a copy of each variable for each circle.)
    
-   **(Optional) Challenge**: Modify the code to draw three independent circles, each with their own variables.
+   **(Optional) Challenge**: Modify the code to draw three independent circles, each with their own variables, moving in the `x` and `y` directions, and reflecting off any canvas edge.
    
 
 ### HSB: Another way to look at color
