@@ -1,14 +1,14 @@
-### Homework 2 (due Thursday, September 20, 2018)
+## Homework 2 (due Thursday, September 20, 2018)
 
 THis homework has two parts. First, follow up on our in-class work. Second, prepare for our next class session by watching a few videos and answering some questions.
 
 You will be submitting each homework assignment into a new GitHub repository each week. [Here are instructions on how to do so.](https://github.com/zamfi/github-guide/blob/master/README.md) Please [email me](mailto:zamfi@cca.edu) if you have any questions!
 
-#### Classwork wrap-up
+### Classwork wrap-up
 
 **Assignment**: In class, we wrote and adapted code to create [Mondrian](https://www.google.com/search?q=mondrian&rls=en&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiL5_mk3sDdAhUB84MKHW6aAt4Q_AUIDigB&biw=1521&bih=943) look-alikes. Post two of your favorite dynamic (i.e., not one unchanging image) Mondrian-esque pieces to your class repository!
 
-#### Animations & Variables in p5
+### Animations & Variables in p5
 
 In class, we [briefly touched on](../README.md) animations in p5, and how to use variables to track changes acrsos frames.
 
@@ -51,7 +51,7 @@ function draw() {
    **(Optional) Challenge**: Modify the code to draw three independent circles, each with their own variables.
    
 
-#### HSB: Another way to look at color
+### HSB: Another way to look at color
 
 Now consider the following code:
 
