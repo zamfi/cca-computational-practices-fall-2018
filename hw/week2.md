@@ -80,4 +80,4 @@ HSB still uses 3 numbers to represent color, but they're *hue*, *saturation*, an
 
 Note that when you make this modification, none of the numbers change. The only thing that changes is **what those numbers represent**.
 
-**Assignment**: Rename the `x` and `y` variables `h` and `s` (for "hue" and "saturation"). In your `README.me` file, answer: what changes in the animation?
+**Assignment**: Rename the `x` and `y` variables `h` and `s` (for "hue" and "saturation"). In your `README.me` file, answer: what changes in the animation? What if you change them to nonsense names, like "dog" and "cat"?
