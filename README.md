@@ -220,3 +220,202 @@ function draw() {
 ```
 
 [Homework for Week 2]
+
+### Week 3: Friday, September 21, 2018
+
+#### Homework Review
+
+What did you learn from Shiffman's videos?
+- What are variables?
+- What is an animation?
+- What is a condition? What kinds of conditions can you have?
+- Variable names & variable intents.
+
+#### Exploring Code
+
+Let's explore some more complicated animations. I've included four sketches below for inspiration.
+
+#### Water dripping
+
+```javascript
+var x = 230;
+var y = 220;
+
+function setup() {
+  createCanvas(400, 400);
+  colorMode(HSB)
+}
+  
+function draw() {
+  background(0);
+  noStroke();
+
+  // draw pipe
+  rect(0, 200, x, 20);
+  
+  // draw drip
+  ellipse(x, y, 10);
+  
+  // down 3 pixels each frame, but maybe should be accelerating?
+  y = y + 3
+  
+  // if invisible for a full “height” amount…
+  if (y > height*2) {
+    // reset
+    y = 220;
+  }
+}
+```
+
+Possible extensions:
+1. Add more drops!
+2. Make the pipe leaky: add drops from other points on the pipe.
+3. Add drops from the top of the canvas too.
+4. Add a puddle that "grows" as it receives drops.
+
+#### Filling a grid of circles
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+// track the circle to draw next frame
+let x = 25;
+let y = 25;
+
+function draw() {
+  colorMode(HSB);
+  stroke(255);
+  
+  // draw circle with random hue
+  fill(random(255), 100, 100);
+  ellipse(x, y, 20);
+  
+  // set up next circle
+  x = x + 25;
+  
+  // if we hit the right edge, go down a line
+  if (x > width-25) {
+    x = 25;
+    y = y + 25;
+  }
+  
+  // if we hit the bottom edge, reset to top
+  if (y > height-25) {
+    y = 25;
+  }
+}
+```
+
+Possible extensions:
+1. Make each circle shift in hue just slightly from the previous one, instead of randomly.
+2. Instead of drawing the circles sequentially, draw them randomly -- but maintain the grid pattern!
+
+#### Smokestack
+
+```javascript
+var x = 210;
+var y = 290;
+var r = 0;
+
+function setup() {
+  createCanvas(400, 400);
+}
+  
+function draw() {
+  background(0);
+  noStroke();
+
+  // draw smokestack
+  fill(255);
+  rect(195, height, 30, -100);
+
+  // darker as it gets closer to 0
+  push();
+  fill(y);
+  translate(x, y);
+  rotate(r);
+  rect(-10, -10, 20, 20);
+  pop();
+  
+  // up 3 pixels
+  y -= 3;
+  
+  // rotate 0.05 radians ~= 2.8 degrees per frame
+  r += 0.05
+  
+  // if reach past the top a bunch
+  if (y < -150) {
+    y = 290;
+  }
+}
+```
+
+Possible extensions:
+
+1. Add additional independent "smoke" particles.
+2. Give some of those particles movement in the `y` direction too.
+2. Add more smokestacks.
+
+#### Shooting stars
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+  background(0, 20, 80);
+}
+
+var fromX;
+var fromY;
+var toX;
+var toY;
+var step = 2.5;
+
+function draw() {
+  // draw background that fades stars slowly
+  background(0, 20, 80, 1);
+  
+  // draw stars
+  if (random() > 0.9) {
+    stroke(255);
+    point(random(width), random(height));
+  }
+  
+  // create shooting stars
+  if (random() > 0.95 && step >= 2.5) {
+    fromX = random(width);
+    fromY = random(height/2);
+    toX = random(fromX+10, width);
+    toY = random(fromY+10, height/2);
+    step = 0;
+  }
+  
+  // draw shooting stars
+  if (step < 2.5) {
+    // fade background
+    let nextStep = step + 0.02;
+    strokeWeight(3);
+    stroke(0, 20, 80, 30);
+    line(fromX, fromY, toX, toY);
+    strokeWeight(1);
+    // draw star
+    if (step < 1) {
+      stroke(255, (1-step) * 200);
+      line(lerp(fromX, toX, step),     lerp(fromY, toY, step),
+           lerp(fromX, toX, nextStep), lerp(fromY, toY, nextStep));
+    }
+    step = nextStep;
+  }
+    
+  // draw ground
+  noStroke();
+  fill(0, 10, 20);
+  rect(0, height*0.6, width, height);
+  
+  // draw lake
+  noStroke();
+  fill(0, 20, 60);
+  ellipse(0, height, width*2.5, height*0.75);
+}
+```
