@@ -419,3 +419,8 @@ function draw() {
   ellipse(0, height, width*2.5, height*0.75);
 }
 ```
+
+Possible extensions:
+1. Add silhouettes of trees or buildings above the ground
+2. Add flickering lights within those silhouettes.
+3. Add a second or third simultaneous shooting star.
