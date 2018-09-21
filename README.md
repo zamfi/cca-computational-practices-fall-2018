@@ -219,7 +219,7 @@ function draw() {
 }
 ```
 
-[Homework for Week 2]
+[Homework for Week 2](hw/week2.md)
 
 ### Week 3: Friday, September 21, 2018
 
