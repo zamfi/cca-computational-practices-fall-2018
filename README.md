@@ -231,7 +231,7 @@ What did you learn from Shiffman's videos?
 - What is a condition? What kinds of conditions can you have?
 - Variable names & variable intents.
 
-#### Exploring Code
+#### Exploring Code -- a workshop about variables, conditions, and animations
 
 Let's explore some more complicated animations. I've included four sketches below for inspiration.
 
@@ -243,7 +243,6 @@ var y = 220;
 
 function setup() {
   createCanvas(400, 400);
-  colorMode(HSB)
 }
   
 function draw() {

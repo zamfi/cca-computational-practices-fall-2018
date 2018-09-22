@@ -12,7 +12,7 @@ You will be submitting each homework assignment into a new GitHub repository eac
 
 In class, we [briefly touched on](../README.md) animations in p5, and how to use variables to track changes acrsos frames.
 
-Watch the following Daniel Shiffman videos about variables and animation in p5 and Javascript: [2.1](https://www.youtube.com/watch?v=RnS0YNuLfQQ&index=7&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), [2.2](https://www.youtube.com/watch?v=Bn_B3T_Vbxs&index=8&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), [3.1](https://www.youtube.com/watch?v=Bn_B3T_Vbxs&index=8&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), [3.2](https://www.youtube.com/watch?v=LO3Awjn_gyU&index=13&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), [3.3](https://www.youtube.com/watch?v=r2S7j54I68c&index=14&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), and [3.4](https://www.youtube.com/watch?v=Rk-_syQluvc&index=15&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA).
+Watch the following Daniel Shiffman videos about variables and animation in p5 and Javascript: [2.1](https://www.youtube.com/watch?v=RnS0YNuLfQQ&index=7&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), [2.2](https://www.youtube.com/watch?v=Bn_B3T_Vbxs&index=8&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), [3.1](https://www.youtube.com/watch?v=1Osb_iGDdjk&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=12), [3.2](https://www.youtube.com/watch?v=LO3Awjn_gyU&index=13&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), [3.3](https://www.youtube.com/watch?v=r2S7j54I68c&index=14&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA), and [3.4](https://www.youtube.com/watch?v=Rk-_syQluvc&index=15&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA).
 
 Consider the code we wrote together in class:
 
@@ -40,7 +40,6 @@ function draw() {
   }
 }
 ```
-
 
 1. **Assignment**: Add other variables to the code above to have other parts of the animation change over time. Perhaps color? Or size? Shape? Speed? `y`-coordinate?
 
