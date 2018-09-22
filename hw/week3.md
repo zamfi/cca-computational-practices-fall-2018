@@ -1,4 +1,4 @@
-## Homework 2 (due Wednesday, September 26, 2018)
+## Homework 3 (due Wednesday, September 26, 2018)
 
 You will be submitting each homework assignment into a new GitHub repository each week. [Here are instructions on how to do so.](https://github.com/zamfi/github-guide/blob/master/README.md) Please [email me](mailto:zamfi@cca.edu) if you have any questions!
 
@@ -193,6 +193,8 @@ Now, it's super easy to add more drops: just add more elements to the `y` array.
 4. How does code refer to the number of elements (aka "entries") in an array? (Hint: it shows up in the code you modified!)
 
 ### Catching up on some older videos
+
+This last part just needs to be completed before next Friday's class -- no need to do it by Wednesday.
 
 We skipped these two three videos earlier, but now's a good time to catch up. Watch these Daniel Shiffman videos about **objects**, the `map` function, and the `random` function: [2.3](https://www.youtube.com/watch?v=-e5h4IGKZRY&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=9), [2.4](https://www.youtube.com/watch?v=nicMAoW6u1g&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=10), and [2.5](https://www.youtube.com/watch?v=nfmV2kuQKwA&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=11).
 
