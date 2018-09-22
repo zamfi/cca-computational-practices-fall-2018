@@ -181,7 +181,7 @@ Now, it's super easy to add more drops: just add more elements to the `y` array.
 
 **Assignment**: Make a 15-drips version of Water Dripping, by adding 12 more numbers in the range 220 to 800 to the `y` array in [this version of Water Dripping](week3-code/drops.js). Make no other changes to the code. Observe what happens. Save this code as `15-drops-dripping.js`.
 
-**Optional Challenge**: Create a new `for` loop that counts up to 20 inside your `setup` function, and use the [`append`](https://p5js.org/reference/#/p5/append) function (once) to add a new number to the `y` array 20 times.
+**Optional Challenge**: Create a new `for` loop that counts up to 40 inside your `setup` function, and use the [`append`](https://p5js.org/reference/#/p5/append) function (once) to add a new number to the `y` array 40 times. Save this code as `40-drops-dripping.js`
 
 **Optional Challenge**: Modify the bouncing circle code from last week's homework assignment, using loops and arrays, to create a sketch with 100 circles bouncing inside the canvas. Save this code as `100-circles.js`.
 
