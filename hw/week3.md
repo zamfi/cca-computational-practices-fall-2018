@@ -149,7 +149,7 @@ See what I did there? I used the variable `i` to access numbers inside the `list
 
 Here's [a version of Water Dripping that uses arrays instead of many variables](week3-code/drops2.js). Let's take look at the differences between the two programs; the code on the left is the original code, and on the right is the new code:
 
-!(Diff 1)[week3-code/diff1.png]
+![Diff 1](week3-code/diff1.png)
 
 Wherever I had a `y` variable with a number, e.g., `y0` or `y1`, I now have an array index instead: `y[0]` or `y[1]`.
 
@@ -169,7 +169,7 @@ Now, using a loop, I can add as many drips as I want, and it's as simple as addi
 
 Here's [a version of Water Dripping that uses arrays **and** loops](week3-code/drops3.js). Let's take a look at the differences now:
 
-!(Diff 2)[week3-code/diff2.png]
+![Diff 2](week3-code/diff2.png)
 
 Notice that we made a single `for` loop, ending at `y.length` -- meaning that the `i` variable goes all the way up to the full length of the `y` array. Inside that loop are:
 
