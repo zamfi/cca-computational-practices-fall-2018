@@ -423,3 +423,5 @@ Possible extensions:
 1. Add silhouettes of trees or buildings above the ground
 2. Add flickering lights within those silhouettes.
 3. Add a second or third simultaneous shooting star.
+
+[Homework for Week 3](hw/week3.md)

@@ -163,7 +163,7 @@ for (var i = 0; i < 10; i = i + 1) {
 }
 ```
 
-This loop above prints the numbers 0 through 9. (Try it! Put that code inside the `setup` function of [a new p5.js sketch](http://editor.p5js.org).) In other words, it repeats the `print(i)` statement 10 times, using a variable `i` that starts at `0`, goes through to `10` and goes up by `+1` each time. (Can you find where those numbers show up in the syntax for the for loop?)
+This loop above prints the numbers 0 through 9. (Try it! Put that code inside the `setup` function of [a new p5.js sketch](http://editor.p5js.org) and observe what is printed in the console below the code area.) In other words, it repeats the `print(i)` statement 10 times, using a variable `i` that starts at `0`, goes through to `10` and goes up by `+1` each time. (Can you find where each of those numbers shows up in the syntax for the for loop?)
 
 Now, using a loop, I can add as many drips as I want, and it's as simple as adding more numbers to the list -- no other code changes required. In fact, adding numbers to the list isn't even really a "code" change, it's more of a "data" change. (We'll talk about this distinction next week.)
 
@@ -179,9 +179,11 @@ Notice that we made a single `for` loop, ending at `y.length` -- meaning that th
 
 Now, it's super easy to add more drops: just add more elements to the `y` array.
 
-**Assignment**: Make a 15-drips version of Water Dripping, by adding 12 more numbers in the range 220 to 800 to the `y` array in [this version of Water Dripping](week3-code/drops.js). Make no other changes to the code. Observe what happens.
+**Assignment**: Make a 15-drips version of Water Dripping, by adding 12 more numbers in the range 220 to 800 to the `y` array in [this version of Water Dripping](week3-code/drops.js). Make no other changes to the code. Observe what happens. Save this code as `15-drops-dripping.js`.
 
-**Optional Challenge**: Modify the bouncing circle code from last week's homework assignment, using loops and arrays, to create a sketch with 100 circles bouncing inside the canvas.
+**Optional Challenge**: Create a new `for` loop that counts up to 20 inside your `setup` function, and use the [`append`](https://p5js.org/reference/#/p5/append) function (once) to add a new number to the `y` array 20 times.
+
+**Optional Challenge**: Modify the bouncing circle code from last week's homework assignment, using loops and arrays, to create a sketch with 100 circles bouncing inside the canvas. Save this code as `100-circles.js`.
 
 **Assignment**: In your `README.md` file, answer the following questions about loops and arrays:
 
