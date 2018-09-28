@@ -425,3 +425,74 @@ Possible extensions:
 3. Add a second or third simultaneous shooting star.
 
 [Homework for Week 3](hw/week3.md)
+
+### Week 4: Friday, September 28, 2018
+
+#### Homework Review
+
+What did you learn from Shiffman's videos?
+1. What's the point of an object?
+2. What's an example of a range you might use for the `map` function?
+3. What line of code would give me a random year in the last century?
+
+#### Loops & Arrays
+
+Here's a cheat sheet for arrays:
+
+- `var listName = [];` -- create a new array
+- `listName[3]` -- access item at index 3 (the *fourth* item) in the array
+- `listName[3] = 7` -- set the item at index 3 to the number 7.
+- `listName.push(12)` -- add the number 12 to the end of the array
+- `listName.length` -- get the number of elements in the array
+
+Here's a cheat sheet for loops:
+
+```javascript
+for (var i = 0; i < 10; i = i + 1) {
+  print(i);
+}
+```
+
+- `var i = 0;` -- **initializer**, runs before the loop starts
+- `i < 10` -- **condition**, runs each time through the loop to check if loop should run again
+- `i = i + 1` -- **increment**, runs after the loop body to change the loop variable
+- `print(i)` -- **body**, the actual code in the loop that is run repeatedly
+
+
+Now, with those in mind, let's convert this code from last week to use arrays and loops:
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 10;
+var y = 10;
+var changeInX = 3;
+var changeInY = 3;
+
+function draw() {
+  background(220);
+  
+  ellipse(x, 200, 40);
+  
+  x = x + changeInX;
+  y = y + changeInY;
+  
+  if (x > width) {
+    changeInX = -3;
+  }
+  
+  if (x < 0) {
+    changeInX = 3;
+  }
+
+  if (y > height) {
+    changeInY = -3;
+  }
+  
+  if (y < 0) {
+    changeInY = 3;
+  }
+}
+```
