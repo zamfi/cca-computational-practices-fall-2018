@@ -474,7 +474,7 @@ var changeInY = 3;
 function draw() {
   background(220);
   
-  ellipse(x, 200, 40);
+  ellipse(x, y, 40);
   
   x = x + changeInX;
   y = y + changeInY;
@@ -496,3 +496,5 @@ function draw() {
   }
 }
 ```
+
+[Here's what we ended up with!](http://pastebin.com/vy2Bh94b)
