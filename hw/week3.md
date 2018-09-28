@@ -179,7 +179,7 @@ Notice that we made a single `for` loop, ending at `y.length` -- meaning that th
 
 Now, it's super easy to add more drops: just add more elements to the `y` array.
 
-**Assignment**: Make a 15-drips version of Water Dripping, by adding 12 more numbers in the range 220 to 800 to the `y` array in [this version of Water Dripping](week3-code/drops.js). Make no other changes to the code. Observe what happens. Save this code as `15-drops-dripping.js`.
+**Assignment**: Make a 15-drips version of Water Dripping, by adding 12 more numbers in the range 220 to 800 to the `y` array in [this version of Water Dripping](week3-code/drops3.js). Make no other changes to the code. Observe what happens. Save this code as `15-drops-dripping.js`.
 
 **Optional Challenge**: Create a new `for` loop that counts up to 40 inside your `setup` function, and use the [`append`](https://p5js.org/reference/#/p5/append) function (once) to add a new number to the `y` array 40 times. Save this code as `40-drops-dripping.js`
 
@@ -196,7 +196,7 @@ Now, it's super easy to add more drops: just add more elements to the `y` array.
 
 This last part just needs to be completed before next Friday's class -- no need to do it by Wednesday.
 
-We skipped these two three videos earlier, but now's a good time to catch up. Watch these Daniel Shiffman videos about **objects**, the `map` function, and the `random` function: [2.3](https://www.youtube.com/watch?v=-e5h4IGKZRY&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=9), [2.4](https://www.youtube.com/watch?v=nicMAoW6u1g&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=10), and [2.5](https://www.youtube.com/watch?v=nfmV2kuQKwA&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=11).
+We skipped these three videos earlier, but now's a good time to catch up. Watch these Daniel Shiffman videos about **objects**, the `map` function, and the `random` function: [2.3](https://www.youtube.com/watch?v=-e5h4IGKZRY&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=9), [2.4](https://www.youtube.com/watch?v=nicMAoW6u1g&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=10), and [2.5](https://www.youtube.com/watch?v=nfmV2kuQKwA&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=11).
 
 Answer these questions in your `README.md` file:
 
