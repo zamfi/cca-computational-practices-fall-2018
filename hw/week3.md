@@ -15,7 +15,7 @@ Let's start with this p5.js **Lawn Simulator™**:
 ```javascript
 function setup() {
   createCanvas(400, 200);
-  colorMode(HSB, 360, 100, 100, 100);
+  colorMode(HSB, 360, 100, 100);
 }
 
 var x = 0;

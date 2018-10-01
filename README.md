@@ -498,3 +498,5 @@ function draw() {
 ```
 
 [Here's what we ended up with!](http://pastebin.com/vy2Bh94b)
+
+[Homework for Week 4](hw/week4.md)
