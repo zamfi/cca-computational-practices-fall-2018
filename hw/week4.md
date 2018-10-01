@@ -27,7 +27,7 @@ If you want more resources on these loops, also consider the [Khan academy tutor
 
 Now, consider the following sketch:
 
-```javacsript
+```javascript
 function setup() {
   createCanvas(400, 400);
 }
@@ -41,7 +41,7 @@ function draw() {
 }
 ```
 
-Answer the following questions in your homework repository's README.md file:
+Answer the following questions in your homework repository's `README.md` file:
 
 1. How many lines are drawn each frame? In other words, how often does the `for` loop run?
 2. What do the first, second, and third appearances of the number `10` do in the code?
