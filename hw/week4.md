@@ -83,6 +83,27 @@ function draw() {
 
 2.  **Optional Challenge**: Animate this sketch by having the anled lines march forward or backwards. Save in your repo as `lines-on-the-move.js`
 
+Lastly, strting with this very slow code:
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+	colorMode(HSB, width, height, 100);
+}
+
+function draw() {
+	var x = random(width);
+	var y = random(height);
+
+	stroke(x, y, 100);
+	point(x, y);
+}
+```
+
+Right now, this code just draws a single pixel per frame (using the `point` funxtion) -- but there are 160,000 pixels total, so filling the canvas will take a while!
+
+**Assignment**: Add a `for` loop to the `draw` function so that, each frame, the code draws `100` pixels instead of just one. What does a `for` loop that runs 100 times look like?
+
 ### Practice with Arrays
 
 In class and in last week's homework, we talked about how arrays work. Here's a brief refresher:
