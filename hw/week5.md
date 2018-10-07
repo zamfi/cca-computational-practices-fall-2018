@@ -109,7 +109,7 @@ function keyPressed() {
 }
 ```
 
-**Assignment**: Replace all the `???` comments above to create a (basic) functional version of Snake! You should be able to pattern-match your way into this.
+**Assignment**: Replace all the `???` comments above to create a (basic) functional version of Snake! You should be able to pattern-match your way into this. Save in your homework repo as `snake.js`. (Do as much as you can, and submit what you have even if you can't finish it!)
 
 **Optional Challenge**: Add scoring to the game and show the score in the corner of the canvas.
 
@@ -167,71 +167,73 @@ for (var i = 20; i <= 480; i = i + 10) {
 }
 ```
 
-1.  **Assignment**: Recreate the following images. Name them in your repository as labeled below.
+**Assignment**: Recreate the following images. Name them in your repository as labeled below.
 
-    You may find it help, before starting this exercise, to re-watch Daniel Shiffman's video tutorials about [`while` and `for` loops](https://www.youtube.com/watch?v=cnRD9o6odjk) and [nested loops](https://www.youtube.com/watch?v=1c1_TMdf8b8).
-    
-    1.  `vertical-lines.js` -- first, some vertical lines:
-        
-        ![vertical lines](img/vertical-lines.png)
-        
-        To get you started, let's apply the instructions above to this image of vertical lines. First, we note the endpoints of the first few lines:
-        
-        ```
-        (10, 10) -> (10, 390)
-        (20, 10) -> (20, 390)
-        (30, 10) -> (30, 390)
-        .
-        .
-        .
-        (390, 10) -> (390, 390)
-        ```
-        
-        So, we have `x1` and `x2` as the only values that change; they **start** at `10`, go **up to** `390`, and go **up by** `10` each time. That means we can use the following loop:
-        
-        ```javascript
-        function setup() {
-          createCanvas(400, 400);
-        }
-        
-        function draw() {
-          background(220);
-          for (var i = 10; i <= 390; i = i + 10) {
-            line(i, 10, i, 390);
-          }
-        }
-        ```        
+You may find it help, before starting this exercise, to re-watch Daniel Shiffman's video tutorials about [`while` and `for` loops](https://www.youtube.com/watch?v=cnRD9o6odjk) and [nested loops](https://www.youtube.com/watch?v=1c1_TMdf8b8).
 
-    2.  `horizontal-lines.js` -- next, make horizontal lines:
+1.  `vertical-lines.js` -- first, some vertical lines:
     
-        ![horizontal lines](img/horizontal-lines.png)
-        
-    3.  `concentric-circles.js` -- try these concentric circles too:
-        
-        ![concentric circles](img/concentric-circles.png)
+    ![vertical lines](img/vertical-lines.png)
+    
+    To get you started, let's apply the instructions above to this image of vertical lines. First, we note the endpoints of the first few lines:
+    
+    ```
+    (10, 10) -> (10, 390)
+    (20, 10) -> (20, 390)
+    (30, 10) -> (30, 390)
+    .
+    .
+    .
+    (390, 10) -> (390, 390)
+    ```
+    
+    So, we have `x1` and `x2` as the only values that change; they **start** at `10`, go **up to** `390`, and go **up by** `10` each time. That means we can use the following loop:
+    
+    ```javascript
+    function setup() {
+      createCanvas(400, 400);
+    }
+    
+    function draw() {
+      background(220);
+      for (var i = 10; i <= 390; i = i + 10) {
+        line(i, 10, i, 390);
+      }
+    }
+    ```        
 
-    4.  `cone-of-lines.js` -- and this cone:
-        
-        ![cone of lines](img/cone-of-lines.png)
-    
-    5.  `diamond-lines.js` -- also this diamond:
-        
-        ![diamond](img/diamond.png)
-    
-    6.  `taller-lines.js` -- what about these taller lines?
-        
-        ![doubles](img/doubles.png)
-    
-    7.  **Optional Challenge**: `art-deco.js` -- for this you'll need a **loop within a loop**:
-        
-        ![artdeco](img/artdeco.png)
+2.  `horizontal-lines.js` -- next, make horizontal lines:
 
-    8.  **Optional Challenge**: `circle-grid.js` -- now try this grid of circles; you'll need **nested loops** for this one too!
-        
-        ![circle grid](img/circle-grid.png)
+    ![horizontal lines](img/horizontal-lines.png)
+    
+3.  `concentric-circles.js` -- try these concentric circles too:
+    
+    ![concentric circles](img/concentric-circles.png)
 
-2.  **Assignemnt**: Pick 3 of Sol LeWitt's *Wall Drawings* from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
+4.  `cone-of-lines.js` -- and this cone:
     
-    Get creative! Use whatever code you're comfortable with. Bonus points for doing more than 3, or for animating them in some way.
+    ![cone of lines](img/cone-of-lines.png)
+
+5.  `diamond-lines.js` -- also this diamond:
     
-    You may also find interesting Casey Reas' [{Software} Structures](http://artport.whitney.org/commissions/softwarestructures/map.html). 
+    ![diamond](img/diamond.png)
+
+6.  `taller-lines.js` -- what about these taller lines?
+    
+    ![doubles](img/doubles.png)
+
+7.  **Optional Challenge**: `art-deco.js` -- for this you'll need a **loop within a loop**:
+    
+    ![artdeco](img/artdeco.png)
+
+8.  **Optional Challenge**: `circle-grid.js` -- now try this grid of circles; you'll need **nested loops** for this one too!
+    
+    ![circle grid](img/circle-grid.png)
+
+#### Sol LeWitt
+
+**Assignemnt**: Pick 3 of Sol LeWitt's *Wall Drawings* from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
+
+Get creative! Use whatever code you're comfortable with. Bonus points for doing more than 3, or for animating them in some way.
+
+You may also find interesting Casey Reas' [{Software} Structures](http://artport.whitney.org/commissions/softwarestructures/map.html). 
