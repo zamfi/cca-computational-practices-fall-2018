@@ -173,7 +173,7 @@ for (var i = 20; i <= 480; i = i + 10) {
     
     1.  `vertical-lines.js` -- first, some vertical lines:
         
-        ![vertical lines](../img/vertical-lines.png)
+        ![vertical lines](img/vertical-lines.png)
         
         To get you started, let's apply the instructions above to this image of vertical lines. First, we note the endpoints of the first few lines:
         
@@ -204,31 +204,31 @@ for (var i = 20; i <= 480; i = i + 10) {
 
     2.  `horizontal-lines.js` -- next, make horizontal lines:
     
-        ![horizontal lines](../img/horizontal-lines.png)
+        ![horizontal lines](img/horizontal-lines.png)
         
     3.  `concentric-circles.js` -- try these concentric circles too:
         
-        ![concentric circles](../img/concentric-circles.png)
+        ![concentric circles](img/concentric-circles.png)
 
     4.  `cone-of-lines.js` -- and this cone:
         
-        ![cone of lines](../img/cone-of-lines.png)
+        ![cone of lines](img/cone-of-lines.png)
     
     5.  `diamond-lines.js` -- also this diamond:
         
-        ![diamond](../img/diamond.png)
+        ![diamond](img/diamond.png)
     
     6.  `taller-lines.js` -- what about these taller lines?
         
-        ![doubles](../img/doubles.png)
+        ![doubles](img/doubles.png)
     
     7.  **Optional Challenge**: `art-deco.js` -- for this you'll need a **loop within a loop**:
         
-        ![artdeco](../img/artdeco.png)
+        ![artdeco](img/artdeco.png)
 
     8.  **Optional Challenge**: `circle-grid.js` -- now try this grid of circles; you'll need **nested loops** for this one too!
         
-        ![circle grid](../img/circle-grid.png)
+        ![circle grid](img/circle-grid.png)
 
 2.  **Assignemnt**: Pick 3 of Sol LeWitt's *Wall Drawings* from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
     
