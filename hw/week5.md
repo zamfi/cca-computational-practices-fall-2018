@@ -141,20 +141,20 @@ For example, to create the following sketch:
 .
 .
 .
-(20, 480) -> (480, 20)
+(20, 380) -> (380, 20)
 ```
 
 ...from these coordinates, we can find a pattern for each of the four parameters we need to draw a line:
 
 - `startX`: always 20
-- `startY`: starts at 20, ends at 480, goes up by 10 each time
-- `endX`: starts at 20, ends at 480, goes up by 10 each time
+- `startY`: starts at 20, ends at 380, goes up by 10 each time
+- `endX`: starts at 20, ends at 380, goes up by 10 each time
 - `endY`: always 20
 
 ...from this pattern, we can generate a loop that draws these lines, by creating a variable that starts at `20`, ends at `480`, and goes up by `10` each time. We won't call the variable `x` or `y` beacuse we don't use it exclusively for either coordinate.
 
 ```javascript
-for (var i = 20; i <= 480; i = i + 10) {
+for (var i = 20; i <= 380; i = i + 10) {
   var startX = 20;
   var startY = i;
   var endX = i;
