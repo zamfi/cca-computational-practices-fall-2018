@@ -4,7 +4,7 @@ You will be submitting each homework assignment into a new GitHub repository eac
 
 ### Classwork Wrap-up
 
-In [class](../README.md#), we started writing a clone of the classic game Snake. Here's an expanded set of code that's missing a few pieces to be complete:
+In [class](../README.md#week-5-friday-october-5-2018), we started writing a clone of the classic game Snake. Here's an expanded set of code that's missing a few pieces to be complete:
 
 ```javascript
 var bodyX = [3, 3, 3, 3];
