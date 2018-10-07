@@ -115,10 +115,6 @@ function keyPressed() {
 
 ### Practice with Loops
 
-For this part of the homework, read about one way of working with loops below, and then use this mode to recreate some sketches.
-
-#### Working with Loops
-
 Here's one way of working with loops, and figuring out how to turn a pattern into code:
 
 1. Write down the coordinates of the shapes you want to create in your loop.
@@ -230,7 +226,7 @@ You may find it help, before starting this exercise, to re-watch Daniel Shiffman
     
     ![circle grid](img/circle-grid.png)
 
-#### Sol LeWitt
+### Sol LeWitt
 
 **Assignemnt**: Pick 3 of Sol LeWitt's *Wall Drawings* from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
 
