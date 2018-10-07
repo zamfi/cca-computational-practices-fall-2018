@@ -19,53 +19,53 @@ var foodY = 10;
 var direction = "right";
 
 function setup() {
-	createCanvas(405, 405);
-	frameRate(5);
+  createCanvas(405, 405);
+  frameRate(5);
 }
 
 function draw() {
-	background(0);
+  background(0);
 
   // handle motion
-	var oldX = bodyX[0];
-	var oldY = bodyY[0];
-	var newX = oldX;
-	var newY = oldY;
+  var oldX = bodyX[0];
+  var oldY = bodyY[0];
+  var newX = oldX;
+  var newY = oldY;
 
-	if (direction == "right") {
-		newX = oldX + 1;
-	}
-	if (direction == "left") {
-		// ???
-	}
-	if (direction == "down") {
-		newY = oldY + 1;
-	}
-	if (direction == "up") {
-		// ???
-	}
+  if (direction == "right") {
+    newX = oldX + 1;
+  }
+  if (direction == "left") {
+    // ???
+  }
+  if (direction == "down") {
+    newY = oldY + 1;
+  }
+  if (direction == "up") {
+    // ???
+  }
 
   // add new head
-	bodyX.unshift(newX);
-	bodyY.unshift(newY);
+  bodyX.unshift(newX);
+  bodyY.unshift(newY);
 
   // make sure snake isn't too long
-	bodyX = bodyX.slice(0, snakeLength);
-	bodyY = bodyY.slice(0, snakeLength);
-	
+  bodyX = bodyX.slice(0, snakeLength);
+  bodyY = bodyY.slice(0, snakeLength);
+  
   // is head on the food?
-	if (bodyX[0] == foodX && bodyY[0] == foodY) {
-		snakeLength = snakeLength + 1;
+  if (bodyX[0] == foodX && bodyY[0] == foodY) {
+    snakeLength = snakeLength + 1;
     frameRate(frameRate() + 1);
     placeFood();
-	}
+  }
 
   // draw snake
-	noStroke();
-	fill(255);
-	for (var i = 0; i < bodyX.length; i = i + 1) {
-		rect(bodyX[i] * GRIDSIZE, bodyY[i] * GRIDSIZE, GRIDSIZE, GRIDSIZE);
-	}
+  noStroke();
+  fill(255);
+  for (var i = 0; i < bodyX.length; i = i + 1) {
+    rect(bodyX[i] * GRIDSIZE, bodyY[i] * GRIDSIZE, GRIDSIZE, GRIDSIZE);
+  }
   
   // draw food
   fill(255, 0, 0);
@@ -102,9 +102,9 @@ function placeFood() {
 }
 
 function keyPressed() {
-	if (keyCode == DOWN_ARROW) {
-		direction = "down";
-	}
+  if (keyCode == DOWN_ARROW) {
+    direction = "down";
+  }
   // ??? - other directions?
 }
 ```
