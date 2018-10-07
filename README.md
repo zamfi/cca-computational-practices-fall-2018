@@ -500,3 +500,62 @@ function draw() {
 [Here's what we ended up with!](http://pastebin.com/vy2Bh94b)
 
 [Homework for Week 4](hw/week4.md)
+
+### Week 5: Friday, October 5, 2018
+
+Designing and implementing from scratch, using the data/render/simulate/user input breakdown, a sketch of moderate complexity.
+
+In class, we started building Snake together. We began by decomposing the game into components, and listing each component under the heading of Data Model, Rendering, Simulation, and User Input:
+
+|     Data Model     | Rendering (Draw)    |     Simulation     |      User Input       |
+|--------------------|---------------------|--------------------|-----------------------|
+| food: `x`, `y` | food | move food when eaten |                  |
+| snake: length, speed, location  | snake | snake growth, movement, collisions |  snake direction: arrow keys |
+| grid | grid    |  make sure food and snake stay on grid  |                       |
+| score  | score  |    |    |
+| walls | | | 
+
+Then we started writing code, picking off the easiest / lowest hanging fruit from our chart above. Good practice is to prioritize the smallest possible thing that you can still show works: in our case, we started by modeling and rendering the snake. Then, simulating the snake's movement. Etc.
+
+We ended up with this code:
+
+```javascript
+var bodyX = [3, 3, 3, 3];
+var bodyY = [2, 3, 4, 5];
+var snakeLength = 4;
+ 
+var direction = "right";
+ 
+function setup() {
+  createCanvas(400, 400);
+    frameRate(1);
+}
+ 
+var GRIDSIZE = 15;
+ 
+function draw() {
+  background(220);
+  noStroke();
+ 
+  for (var i = 0; i < bodyX.length; i = i + 1) {
+    rect(bodyX[i] * GRIDSIZE, bodyY[i] * GRIDSIZE, GRIDSIZE, GRIDSIZE);
+  }
+ 
+  if (direction == "right") {
+    var oldX = bodyX[0];
+    var oldY = bodyY[0];
+    var newX = oldX + 1;
+    var newY = oldY;
+    bodyX.unshift(newX);
+    bodyY.unshift(newY);
+    print(bodyX, bodyY);
+  }
+ 
+  bodyX = bodyX.slice(0, snakeLength);
+  bodyY = bodyY.slice(0, snakeLength);
+}
+```
+
+We'll extend this a little bit in the homework!
+
+[Homework for Week 5](hw/week5.md)
