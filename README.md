@@ -559,3 +559,49 @@ function draw() {
 We'll extend this a little bit in the homework!
 
 [Homework for Week 5](hw/week5.md)
+
+
+### Week 6: Friday, October 5, 2018
+
+Today we'll start the "music and motion" mini-project. The goal here is to create an animation that is both beautiful (subjective) and  musical (also subjective). You'll work on this for homework for the next two weeks.
+
+We'll start by breaking out of the p5.js web editor -- it's very useful in many ways, but also holds us back in many ways.
+
+All the p5.js code we've been writing has actually been running in a web page generated and "served" by the p5.js editor using a piece of software called a "web server". In order to break out of the p5.js editor, we'll need to run our own "web server". Fortunately, this is not as scary as it sounds! (Aside: strictly speaking this is not true for all projects: if your project is simple enough -- e.g., doesn't include any sounds -- you can probably just open the `index.html` file directly from your browser.)
+
+In fact, there are many ways to run a web server on your laptop. One of the least complicated is to use a web server that is built in to the Python programming language:
+
+1.  Download your full project code.
+    
+    From the p5.js web editor, you can do this by going to the "File" menu -> "Download" -- then unzip this file to reveal a folder with all your code in it, including a file called `index.html`. 
+    
+    From GitHub, click the green "Clone or Download" button and the "Download ZIP" link inside that.
+
+1. Install the newest version of python, `python3`: visit [python.org](https://www.python.org) and follow the download links to download the latest version of python (3.7.0 as of this writing).
+
+1. Run the installer you just downloaded.
+
+1.  Open up a command prompt on your computer. 
+    
+    On a Mac, this is the "Terminal" application in the "Utilities" folder of your "Applications" folder.
+    
+    On Windows, type `cmd` into the Start search bar, and run the "Command Prompt".
+
+1. Navigate your prompt to the folder where your code files are, using `cd` to switch directories and `dir` (Windows) or `ls` (Mac) to show the contents of the current folder.
+
+1. Run python's built-in web server by typing `py -m http.server 8000` (Windows) or `python3 -m http.server 8000` (Mac) and pressing return (or enter).
+
+1. Visit the page served by this web server by visiting [`http://localhost:8000`](http://localhost:8000) in Chrome on your computer.
+
+
+#### Music and Motion
+
+For the next two weeks, you'll work on making a sketch with music and motion.
+
+To help get you started, here are a few example sketches. (Use Chrome for these, especially the ones that make sound!)
+
+- [Musical Bounces](https://editor.p5js.org/jd/sketches/Hki9-JCcm)
+- [Fonty](https://editor.p5js.org/jd/sketches/ByMQ1e09X)
+- [Keyboard Keyboard](https://editor.p5js.org/jd/sketches/H1SPkxA5X)
+- [Lines from Circles](https://editor.p5js.org/jd/sketches/SJhrvlR97)
+
