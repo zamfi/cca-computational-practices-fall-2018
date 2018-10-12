@@ -587,7 +587,7 @@ In fact, there are many ways to run a web server on your laptop. One of the leas
     
     On Windows, type `cmd` into the Start search bar, and run the "Command Prompt".
 
-1. Navigate your prompt to the folder where your code files are, using `cd` to switch directories and `dir` (Windows) or `ls` (Mac) to show the contents of the current folder.
+1. Navigate your command prompt to the folder where your code files are. Type `cd ` (don't skip the space!) and then drag your folder into the terminal window. Hit enter. Type `ls` (Mac) or `dir` (Windows) to see a list of the files in that folder; you should see at least an `index.html` file and a `sketch.js` file, among others.
 
 1. Run python's built-in web server by typing `py -m http.server 8000` (Windows) or `python3 -m http.server 8000` (Mac) and pressing return (or enter).
 
