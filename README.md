@@ -577,7 +577,7 @@ In fact, there are many ways to run a web server on your laptop. One of the leas
     
     From GitHub, click the green "Clone or Download" button and the "Download ZIP" link inside that.
 
-1. Install the newest version of python, `python3`: visit [python.org](https://www.python.org) and follow the download links to download the latest version of python (3.7.0 as of this writing).
+1. Install an older version, version 2.7.15, of python: visit [python.org](https://www.python.org) and follow the download links to download version 2.7.15.
 
 1. Run the installer you just downloaded.
 
@@ -589,7 +589,7 @@ In fact, there are many ways to run a web server on your laptop. One of the leas
 
 1. Navigate your command prompt to the folder where your code files are. Type `cd ` (don't skip the space!) and then drag your folder into the terminal window. Hit enter. Type `ls` (Mac) or `dir` (Windows) to see a list of the files in that folder; you should see at least an `index.html` file and a `sketch.js` file, among others.
 
-1. Run python's built-in web server by typing `py -m http.server 8000` (Windows) or `python3 -m http.server 8000` (Mac) and pressing return (or enter).
+1. Run python's built-in web server by typing `py -m SimpleHTTPServer 8000` (Windows) or `python -m SimpleHTTPServer 8000` (Mac) and pressing return (or enter).
 
 1. Visit the page served by this web server by visiting [`http://localhost:8000`](http://localhost:8000) in Chrome on your computer.
 
