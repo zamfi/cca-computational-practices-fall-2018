@@ -27,7 +27,7 @@ This sketch loads a single audio file, `glockenspiel.m4a`, and changes the "rate
 
 The sketch starts by creating a `sounds` array and filling it with copies of the `glockenspiel.m4a` sound file set to play back at different rates / pitches:
 
-```javacsript
+```javascript
 var sounds = [];
 
 function preload() {
@@ -47,7 +47,7 @@ In this preload, the code adds `15` "`sound`" entries to the `sounds` array, eac
 
 Next up come the `setup` and `draw` functions:
 
-```javacsript
+```javascript
 function setup() {
   createCanvas(400, 400);
   rectMode(CENTER);
@@ -77,7 +77,7 @@ Then, it draws a rectangle in a location that depends on the `sound`'s index in 
 
 Lastly, we need to capture key presses to actually play the sounds!
 
-```javacsript
+```javascript
 function keyPressed() {
   if (key == 'a') {
     sounds[0].play();
@@ -163,7 +163,7 @@ Each letter here is a list of 7 lists, each containing 5 `0`-or-`1` values. The 
 
 Next, we create the circle objects that we'll use the draw the characters:
 
-```javacsript
+```javascript
 // a circle for every possible dot in the matrix
 var circles = [];
 
@@ -267,29 +267,3 @@ With `r` and `c` we can now get the corresponding circle using the index `r*5+c`
 To actually set the targets takes a little bit of finessing to get this right: the `x = width/5 * (c + 0.5)` and `y = height/7 * ( + 0.5)` are the result of some trial-and-error, but ultimately they convert row and column values (the `r` and `c` variables that we get from the two nested loops) into `x` and `y` coordinates. 
 
 Whether you use a grid or not for your project, this concept of having `targetX` and `targetY` variables is powerful: you can create all sorts of animations with them by slowly moving `x` and `y` towards a `targetX` and `targetY` as you draw your object!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
