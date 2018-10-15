@@ -561,7 +561,7 @@ We'll extend this a little bit in the homework!
 [Homework for Week 5](hw/week5.md)
 
 
-### Week 6: Friday, October 5, 2018
+### Week 6: Friday, October 12, 2018
 
 Today we'll start the "music and motion" mini-project. The goal here is to create an animation that is both beautiful (subjective) and  musical (also subjective). You'll work on this for homework for the next two weeks.
 
@@ -587,9 +587,11 @@ In fact, there are many ways to run a web server on your laptop. One of the leas
     
     On Windows, type `cmd` into the Start search bar, and run the "Command Prompt".
 
-1. Navigate your command prompt to the folder where your code files are. Type `cd ` (don't skip the space!) and then drag your folder into the terminal window. Hit enter. Type `ls` (Mac) or `dir` (Windows) to see a list of the files in that folder; you should see at least an `index.html` file and a `sketch.js` file, among others.
+1.  The command prompt is a way to run "Command Line Interface" programs on your computer. Usually, when you open a command prompt, you'll be sitting in your home folder. Type `ls` (Mac) or `dir` (Windows) to see a list of the files in that folder, or type `cd ` followed by a folder name to switch into a new folder.
+    
+    Navigate your command prompt to the folder where your code files are. The easy way to do this is to type `cd ` (don't skip the space!) and then drag your folder into the terminal window. Hit enter. Type `ls` (Mac) or `dir` (Windows) to see a list of the files in that folder; you should see at least an `index.html` file and a `sketch.js` file, among others. The file `index.html` is the one that's sent to your browser by default.
 
-1. Run python's built-in web server by typing `py -m SimpleHTTPServer 8000` (Windows) or `python -m SimpleHTTPServer 8000` (Mac) and pressing return (or enter).
+1. Run python's built-in "simple" web server by typing `py -m SimpleHTTPServer 8000` (Windows) or `python -m SimpleHTTPServer 8000` (Mac) and pressing return (or enter).
 
 1. Visit the page served by this web server by visiting [`http://localhost:8000`](http://localhost:8000) in Chrome on your computer.
 
@@ -600,8 +602,8 @@ For the next two weeks, you'll work on making a sketch with music and motion.
 
 To help get you started, here are a few example sketches. (Use Chrome for these, especially the ones that make sound!)
 
-- [Musical Bounces](https://editor.p5js.org/jd/sketches/Hki9-JCcm)
-- [Fonty](https://editor.p5js.org/jd/sketches/ByMQ1e09X)
 - [Keyboard Keyboard](https://editor.p5js.org/jd/sketches/H1SPkxA5X)
+- [Fonty](https://editor.p5js.org/jd/sketches/ByMQ1e09X)
+- [Musical Bounces](https://editor.p5js.org/jd/sketches/Hki9-JCcm)
 - [Lines from Circles](https://editor.p5js.org/jd/sketches/SJhrvlR97)
 
