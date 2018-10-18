@@ -1,4 +1,4 @@
-## Homework 4 (due Thursday night, October 18, 2018)
+## Homework 6 (due Thursday night, October 18, 2018)
 
 You will be submitting each homework assignment into a new GitHub repository each week. [Here are instructions on how to do so.](https://github.com/zamfi/github-guide/blob/master/README.md) Please [email me](mailto:zamfi@cca.edu) if you have any questions!
 
