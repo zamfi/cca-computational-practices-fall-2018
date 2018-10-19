@@ -23,7 +23,7 @@ Here are annotated versions of two of the sketches we looked at in class:
 
 #### Keyboard keyboard
 
-This sketch loads a single audio file, `glockenspiel.m4a`, and changes the "rate" of playback to change its pitch. (`.m4a` files are very similar to `.mp3` files.) **In order for this code to work, you need to have the `glockenspiel.m4a` sound in your project. For this, you can duplicate or download my sketch: [Keyboard Keyboard](https://editor.p5js.org/jd/sketches/H1SPkxA5X).
+This sketch loads a single audio file, `glockenspiel.m4a`, and changes the "rate" of playback to change its pitch. (`.m4a` files are very similar to `.mp3` files.) **In order for this code to work, you need to have the `glockenspiel.m4a` sound in your project. For this, you can duplicate or download my sketch: [Keyboard Keyboard](https://editor.p5js.org/jd/sketches/H1SPkxA5X).**
 
 The sketch starts by creating a `sounds` array and filling it with copies of the `glockenspiel.m4a` sound file set to play back at different rates / pitches:
 
