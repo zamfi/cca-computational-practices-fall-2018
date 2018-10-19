@@ -610,7 +610,9 @@ To help get you started, here are a few example sketches. (Use Chrome for these,
 
 ### Week 7: Friday, October 19, 2018
 
-Back to basics.
+First, you should all attend the Code in Color event next Thursday evening at CCA in Oakland! [Register here.](https://www.eventbrite.com/e/code-in-color-california-college-of-the-arts-tickets-50653496973)
+
+#### Back to basics.
 
 Consider the following code for loading a single sound:
 
@@ -675,7 +677,7 @@ Now you have a sketch that plays doorbell sounds, and a sketch that bounces a ci
 
 How can you combine these into a sketch that plays doorbell sounds when the circle bounces?
 
-### APIs
+#### APIs
 
 Here's a simple sketch that draws the current wind speed. You'll need to create an account with [Aeris Weather](https://www.aerisweather.com/signup/pricing/) to get API credentials. Then place those in the relevant part of the code below.
 
@@ -683,8 +685,6 @@ Here's a simple sketch that draws the current wind speed. You'll need to create 
 var weather;
 
 function preload() {
-  soundFormats('mp3', 'ogg');
-	
   var zipCode = "94618";
   var ID = "<YOUR ID HERE>";
   var SECRET = "<YOUR SECRET HERE>";
@@ -710,3 +710,19 @@ function draw() {
   }
 }
 ```
+
+#### Your own server
+
+Last week, we looked at using python to run a web server.
+
+Today, you'll run your own web server. 
+
+1. Download and install [Node.js](http://nodejs.org). This is a program that runs javascript from your terminal, not your web browser. It lets you run servers and do other computation.
+1. Download and install [GitHub Desktop](http://desktop.github.com). This lets you interact with GitHub through a desktop app.
+1. Make your own **fork** of the `simple-server` repository by visiting [simple-server](http://github.com/zamfi/simple-server), and clicking the **Fork** button.
+1. Use GitHub Desktop to download the `simple-server` repository to your computer.
+1. Open that project using Atom or Sublime Text.
+1. Open the Terminal or command prompt and navigate to the server folder.
+1. Enter the command `node server.js` to run the server itself.
+
+
