@@ -607,3 +607,106 @@ To help get you started, here are a few example sketches. (Use Chrome for these,
 - [Musical Bounces](https://editor.p5js.org/jd/sketches/Hki9-JCcm)
 - [Lines from Circles](https://editor.p5js.org/jd/sketches/SJhrvlR97)
 
+
+### Week 7: Friday, October 19, 2018
+
+Back to basics.
+
+Consider the following code for loading a single sound:
+
+```javascript
+var mySound;
+
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('doorbell.mp3');
+}
+
+function setup() {
+  createCanvas(400, 400);
+  mySound.setVolume(0.5);
+  mySound.play();
+}
+
+function draw() {
+  background(220);
+}
+```
+
+You'll need the `doorbell.mp3` sound, so duplicate [this sketch](https://editor.p5js.org/jd/sketches/Skh1r5PiX) to get the full experience.
+
+Can you figure out:
+
+1. How to play the sound whenever you click?
+2. How to make the doorbell ring frequently but randomly?
+3. How to change the doorbell pitch? (Hint: look at the SoundFile.rate function in the reference!)
+
+Now let's layer on another sketch:
+
+```javascript
+var x;
+var y;
+var vx = 3;
+var vy = 2;
+var r = 5;
+
+function setup() {
+  createCanvas(400, 400);
+  x = random(r, width-r);
+  y = random(r, height-r);
+}
+
+function draw() {
+  ellipse(x, y, 10);
+  
+  x += vx;
+  y += vy;
+  
+  if (x < r || x > width-r) {
+    vx = -vx;
+  } 
+  if (y < r || y > height-r) {
+    vy = -vy;
+  }
+}
+```
+
+Now you have a sketch that plays doorbell sounds, and a sketch that bounces a circle.
+
+How can you combine these into a sketch that plays doorbell sounds when the circle bounces?
+
+### APIs
+
+Here's a simple sketch that draws the current wind speed. You'll need to create an account with [Aeris Weather](https://www.aerisweather.com/signup/pricing/) to get API credentials. Then place those in the relevant part of the code below.
+
+```javascript
+var weather;
+
+function preload() {
+  soundFormats('mp3', 'ogg');
+	
+  var zipCode = "94618";
+  var ID = "<YOUR ID HERE>";
+  var SECRET = "<YOUR SECRET HERE>";
+  weather = loadJSON(
+    'https://api.aerisapi.com/observations/' + zipCode +
+    '?client_id=' + ID + '&client_secret=' + SECRET);
+}
+
+var windSpeed;
+
+function setup() {
+  createCanvas(400, 200);
+
+  windSpeed = weather.response.ob.windMPH;
+  print("speed:", windSpeed);
+}
+
+function draw() {
+  background(220);
+  
+  for (var y = 20; y < height-10; y += 20) {
+    line(20, y, 20+random(4) + windSpeed * 10, y+random(-2, 2));
+  }
+}
+```
