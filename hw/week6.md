@@ -1,4 +1,4 @@
-## Homework 4 (due Thursday night, October 18, 2018)
+## Homework 6 (due Thursday night, October 18, 2018)
 
 You will be submitting each homework assignment into a new GitHub repository each week. [Here are instructions on how to do so.](https://github.com/zamfi/github-guide/blob/master/README.md) Please [email me](mailto:zamfi@cca.edu) if you have any questions!
 
@@ -23,7 +23,7 @@ Here are annotated versions of two of the sketches we looked at in class:
 
 #### Keyboard keyboard
 
-This sketch loads a single audio file, `glockenspiel.m4a`, and changes the "rate" of playback to change its pitch. (`.m4a` files are very similar to `.mp3` files.) **In order for this code to work, you need to have the `glockenspiel.m4a` sound in your project. For this, you can duplicate or download my sketch: [Keyboard Keyboard](https://editor.p5js.org/jd/sketches/H1SPkxA5X).
+This sketch loads a single audio file, `glockenspiel.m4a`, and changes the "rate" of playback to change its pitch. (`.m4a` files are very similar to `.mp3` files.) **In order for this code to work, you need to have the `glockenspiel.m4a` sound in your project. For this, you can duplicate or download my sketch: [Keyboard Keyboard](https://editor.p5js.org/jd/sketches/H1SPkxA5X).**
 
 The sketch starts by creating a `sounds` array and filling it with copies of the `glockenspiel.m4a` sound file set to play back at different rates / pitches:
 
