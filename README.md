@@ -675,7 +675,49 @@ function draw() {
 
 Now you have a sketch that plays doorbell sounds, and a sketch that bounces a circle.
 
-How can you combine these into a sketch that plays doorbell sounds when the circle bounces?
+1. How can you combine these into a sketch that plays doorbell sounds when the circle bounces?
+
+Here's the code we came up with together in class:
+
+```javascript
+var mySound;
+
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('doorbell.mp3');
+}
+
+var x;
+var y;
+var vx = 3;
+var vy = 2;
+var r = 5;
+
+function setup() {
+  createCanvas(400, 400);
+  x = random(r, width - r);
+  y = random(r, height - r);
+}
+
+function draw() {
+  background(220);
+  ellipse(x, y, 10);
+
+  x += vx;
+  y += vy;
+
+  if (x < r || x > width - r) {
+    vx = -vx;
+    mySound.play();
+  }
+  if (y < r || y > height - r) {
+    vy = -vy;
+    mySound.play();
+  }
+}
+```
+
+<!--
 
 #### APIs
 
@@ -726,3 +768,4 @@ Today, you'll run your own web server.
 1. Enter the command `node server.js` to run the server itself.
 
 
+-->
