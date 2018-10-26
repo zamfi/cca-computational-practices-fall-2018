@@ -797,7 +797,7 @@ To run your own server, we'll first get comfortable with the command line, acces
    1. `pwd` (or `echo %cd%` on windows) -- what folder are you currently in?
    1. `ls` (or `dir` on windows) -- list the files in the current folder
    1. `cd` -- change to a new folder, e.g., `cd my-sketch` or `cd public`
-   1. `cat` (or `type` on windows) -- print the contents of a file, e.g., `cat index.html`
+   1. `cat` (or `type` on windows) -- show the contents of a file, e.g., `cat index.html`
 
 Now, to actually run the server:
 
