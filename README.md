@@ -717,7 +717,9 @@ function draw() {
 }
 ```
 
-<!--
+### Week 8: Friday, October 26, 2018
+
+Questions about Music & Motion?
 
 #### APIs
 
@@ -759,13 +761,49 @@ Last week, we looked at using python to run a web server.
 
 Today, you'll run your own web server. 
 
-1. Download and install [Node.js](http://nodejs.org). This is a program that runs javascript from your terminal, not your web browser. It lets you run servers and do other computation.
+A p5.js sketch typically looks like this:
+
+1.  An `index.html` file. This file is the "entry point" to your sketch for the browser, and ties all the other parts together. Typically, this file looks like this:
+    
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <script src="p5.min.js"></script>
+      <script src="p5.dom.min.js"></script>
+      <script src="p5.sound.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta charset="utf-8">
+
+    </head>
+    <body>
+      <script src="sketch.js"></script>  
+    </body>
+    </html>
+    ```
+    
+    This file instructs the browser to load in four scripts and one stylesheet. The first 3 scripts are in the `head` section, and get loaded right away. The last script is `sketch.js`, which is where you actually write your p5.js sketch code.
+1.  The `p5.min.js`, `p5.dom.min.js`, and `p5.sound.min.js` files -- these are JavaScript but "minified" to be as small as possible (and as a result, become non-human-readable). Variables are renamed to single letters, spaces and newlines are dropped, etc.
+1.  The `style.css` stylesheet. This is CSS to instruct the browser to minimize any extra stuff around your sketch, but you can put other styling in here.
+1.  The `sketch.js` file. This is your actual p5.js code, and what we've been actually editing in the p5.js web editor.
+
+To run your own server, we'll first get comfortable with the command line, accessing files and folders:
+    
 1. Download and install [GitHub Desktop](http://desktop.github.com). This lets you interact with GitHub through a desktop app.
 1. Make your own **fork** of the `simple-server` repository by visiting [simple-server](http://github.com/zamfi/simple-server), and clicking the **Fork** button.
 1. Use GitHub Desktop to download the `simple-server` repository to your computer.
 1. Open that project using Atom or Sublime Text.
-1. Open the Terminal or command prompt and navigate to the server folder.
-1. Enter the command `node server.js` to run the server itself.
+1. Open the Terminal or Command Prompt and navigate to the server folder. (We'll do this together.) When you first open the terminal, you'll probably be in the "home" directory. Here are a few useful commands:
+   1. `pwd` (or `echo %cd%` on windows) -- what folder are you currently in?
+   1. `ls` (or `dir` on windows) -- list the files in the current folder
+   1. `cd` -- change to a new folder, e.g., `cd my-sketch` or `cd public`
+   1. `cat` (or `type` on windows) -- print the contents of a file, e.g., `cat index.html`
 
+Now, to actually run the server:
 
--->
+1. Download and install [Node.js](http://nodejs.org). This is a program that runs javascript from your terminal, not your web browser. It lets you run servers and do other computation.
+1. Navigate to the `simple-server` folder.
+1. Enter and run the command `npm install` to install the libraries the server needs.
+1. Enter and run the command `node server.js` to run the server itself.
+1. Visit [http://localhost:8001/](http://localhost:8001) in your browser.
+
