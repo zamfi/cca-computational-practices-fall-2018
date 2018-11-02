@@ -11,7 +11,7 @@ Elements are declared using a **&lt;body&gt;** *some stuff, including other elem
 You can put tags inside the content of other tags, as in: `<p>This is a paragraph with a bit of <strong>strong text</strong> inside.</p>`. The tags now have a **parent-child** relationship; the inner tags are called **children** of the outer, **parent** tag (sometimes also called the **container**).
 
 > **Exercise:** Open up your favorite text editor (e.g., [Atom](http://atom.io)) and create a new file called `hello.html`. Inside this file, paste in this starter HTML:
-> ```javascript
+> ```html
 > <html>
 > <body>
 >   Hi.
