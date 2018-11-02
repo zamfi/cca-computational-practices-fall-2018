@@ -24,7 +24,7 @@ You can put tags inside the content of other tags, as in: `<p>This is a paragrap
 
 > **Exercise:** Create an [&lt;img&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) tag; the `<img>` tag uses a `src=` attribute to incidte the URL (web address) of the image to be included in the page. Next, create an [anchor (`<a>`)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) tag (a link!) that points to http://en.wikipedia.org/wiki/Main_Page -- the English language main page of Wikipedia.
 
-> **Exercise:** Read through the [full list of HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element); create a `<p>` tag, a `<ul>` tag (with two or three `<li>` tags as children inside it), and a `<span>` tag. Pick three new tags from the list of all elements to create in your codepen sketch. Put some of those tags inside other tags.
+> **Exercise:** Read through the [full list of HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element); create a `<p>` tag, a `<ul>` tag (with two or three `<li>` tags as children inside it), and a `<span>` tag. Pick three new tags from the list of all elements to create in your `hello.html` file. Put some of those tags inside other tags.
 
 #### The Inspector
 
@@ -240,6 +240,7 @@ To use jQuery, you generally need a trigger. One such trigger is provided by the
 ```javascript
 function togglePurpleClass() {
   $('.purpleable').toggleClass('purple');
+  setTimeout(togglePurpleClass, 2000);
 }
 
 setTimeout(togglePurpleClass, 2000);
@@ -247,7 +248,7 @@ setTimeout(togglePurpleClass, 2000);
 
 The code above defines the `togglePurpleClass` function, which finds all elements with class `purpleable` and toggles whether they also have the class `purple`. Then it calls `setTimeout` to say **run this function in 2000 milliseconds (i.e., 2 seconds).**
 
-> **Exercise**: Try it! Create a new codepen file with a single `<p class="purpleable">` tag with some content. Define a CSS rule `.purple { color: purple; }` that makes elements with class `purple` be rendered with purple text. Then copy the JavaScript code above.
+> **Exercise**: Try it! Add a single `<p class="purpleable">` tag with some content. Define a CSS rule `.purple { color: purple; }` that makes elements with class `purple` be rendered with purple text. Then copy the JavaScript code above.
 
 > **Experiment**: What happens if you use `setInterval` instead of `setTimeout`? (What do you think will happen?) What if you toggle a different class name?
 
@@ -293,4 +294,4 @@ $(setup);
 
 This code sets the `left` and `top` properties to random values between 0 and 100 whenever the mouse moves over them, using the `{}` object syntax.
 
-> **Exercise**: Create a codepen example with the above code, creating the complementary HTML and CSS.
+> **Exercise**: Create a new HTML file with the above JavaScript code, creating the complementary HTML and CSS.

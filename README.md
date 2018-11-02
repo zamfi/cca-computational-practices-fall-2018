@@ -821,7 +821,36 @@ We'll be working together through the [HTML CSS & Javascript mini-workshop](html
 
 #### JavaScript with HTML
 
-You can do a lot with plain HTML & CSS, but you can't do everything. JavaScript plays a key role in modern web development too.
+You can do a lot with plain HTML & CSS, but you can't do everything. JavaScript plays a key role in modern web development too. 
 
+Here's a fun example that [says hello](hello-name.html):
 
+```html
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Text Generator</title>
+</head>
 
+<body>
+  <button onclick="sayHello()">Hello!</button>
+  <div id="main"></div>
+
+  <script type="text/javascript">
+    let names = ["Bob", "Jane", "Roger", "Howard", "Samantha", "Lucy"];
+    let index = 0;
+    
+    function sayHello() {
+      var text = "Hello, " + names[index] + "!";
+      
+      $('#main').text(text);
+      index = index + 1;
+    }
+    
+    sayHello();
+  </script>
+</body>
+</html>
+```
+
+How can we make it reset when it's said its last hello?
