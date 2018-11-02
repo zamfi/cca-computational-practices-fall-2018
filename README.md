@@ -807,3 +807,21 @@ Now, to actually run the server:
 1. Enter and run the command `node server.js` to run the server itself.
 1. Visit [http://localhost:8001/](http://localhost:8001) in your browser.
 
+### Week 9: Friday, November 2, 2018
+
+Today, we'll start with a critique for Music & Motion mini-project. BUt first, upload your project to CCA's web hosting, fluxus.
+
+Upload your code to fluxus by [following the directions here](https://technology.cca.edu/help/web-hosting-ftp). I recommend [CyberDuck](https://cyberduck.io) to do your file transfering. (We'll do this together in class.)
+
+#### HTML & CSS
+
+So far, we've just used JavaScript with p5.js, and haven't really touched the other foundational pieces of web programming: HTML & CSS.
+
+We'll be working together through the [HTML CSS & Javascript mini-workshop](html-css-miniworkshop.md).
+
+#### JavaScript with HTML
+
+You can do a lot with plain HTML & CSS, but you can't do everything. JavaScript plays a key role in modern web development too.
+
+
+
