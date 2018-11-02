@@ -12,12 +12,12 @@ You can put tags inside the content of other tags, as in: `<p>This is a paragrap
 
 > **Exercise:** Open up your favorite text editor (e.g., [Atom](http://atom.io)) and create a new file called `hello.html`. Inside this file, paste in this starter HTML:
 > ```javascript
-<html>
-<body>
-  Hi.
-</body>
-</html>
-```
+> <html>
+> <body>
+>   Hi.
+> </body>
+> </html>
+> ```
 > Save the `hello.html` file and open it with Chrome. Note what you're doing: the file is a plan text file containing HTML code. Your editor shows you this code. But your browser, Chrome, interprets this code as HTML and renders it according to [the specification for interpreting HTML](https://www.w3.org/TR/html5/). (Aren't you glad you're not writing a browser?)
 
 > **Exercise:** Create an `<h1>` header tag inside the `<body>` section. Examine the output. Add a `<small>` element inside the `<h1>` element.
