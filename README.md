@@ -823,7 +823,7 @@ We'll be working together through the [HTML CSS & Javascript mini-workshop](html
 
 You can do a lot with plain HTML & CSS, but you can't do everything. JavaScript plays a key role in modern web development too. 
 
-Here's a fun example that [says hello](hello-name.html):
+Here's a fun example that [says hello](html-fun/hello-name.html):
 
 ```html
 <html>
