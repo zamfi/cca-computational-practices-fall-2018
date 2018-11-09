@@ -1,0 +1,41 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Circle Generator</title>
+  <style>
+    svg {
+      border: black;
+      width: 100px;
+      height: 100px;
+    }
+    
+    circle.highlight {
+      stroke: orange;
+      stroke-width: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <svg viewbox="0 0 100 100">
+    <circle cx=50 cy=50 r=15 vx=1 vy=2 id="circle" />
+  </svg>
+
+  <script type="text/javascript">
+    let colors = ["red", "blue", "green"];
+    let index = 0;
+
+    function update() {
+      $('#circle').attr("fill", colors[index]);
+      $('#circle').toggleClass('highlight');
+      
+      index = index + 1;
+      if (index >= colors.length) {
+        index = 0;
+      }
+    }
+
+    setInterval(update, 1000);
+  </script>
+</body>
+</html>
