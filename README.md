@@ -854,3 +854,73 @@ Here's a fun example that [says hello](html-fun/hello-name.html):
 ```
 
 How can we make it reset when it's said its last hello?
+
+
+### Week 10: Friday, November 9, 2018
+
+Reviewing HTML, CSS, JavaScript.
+
+#### Vector vs. Pixel Data
+
+With p5.js, we used drawing commands to paint pixels on the screen. This is much like using Photoshop and its tools to paint pixels on the screen.
+
+But there's also a way to draw that's more Illustrator than Photoshop: using vector data.
+
+SVG is a **markup language**, like HTML, but that describes vector images instead of web pages. You can embed SVG directly into HTML pages, and style them using CSS, like in this example:
+
+```html
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Circle Generator</title>
+  <style>
+    svg {
+      border: black;
+      width: 100px;
+      height: 100px;
+    }
+    
+    circle.highlight {
+      stroke: orange;
+      stroke-width: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <svg viewbox="0 0 100 100">
+    <circle cx=50 cy=50 r=15 id="circle" />
+  </svg>
+
+  <script type="text/javascript">
+    let colors = ["red", "blue", "green"];
+    let index = 0;
+
+    function update() {
+      $('#circle').attr("fill", colors[index]);
+      $('#circle').toggleClass('highlight');
+      
+      index = index + 1;
+      if (index >= colors.length) {
+        index = 0;
+      }
+    }
+
+    setInterval(update, 1000);
+  </script>
+</body>
+</html>
+```
+
+Within this HTML file, this is the SVG:
+
+```html
+<svg viewbox="0 0 100 100">
+  <circle cx=50 cy=50 r=15 id="circle" />
+</svg>
+```
+
+That's just one circle. Illustrator will let you export any file to SVG. Try creating a single-sided shape, exporting it as SVG, and pasting it into the HTML file above, replacing the existing SVG file.
+
+Then, add classes to some of the elements, and animate them using the JavaScript code!
+
